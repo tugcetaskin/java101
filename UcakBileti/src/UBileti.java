@@ -48,23 +48,24 @@ public class UBileti {
 
                 if (yas<=12) {
                     double ind5 = b4 * 0.50;
-                    double b5 = b4- ind5;
+                    double b5 = (b4- ind5) * 2;
                     System.out.println(b5);
 
                 }else if ((yas>12) && (yas <=24)) {
                     double ind6 = b4 * 0.10;
-                    double b6 = b4- ind6;
+                    double b6 = (b4- ind6) * 2;
                     System.out.println(b6);
 
                 }else if (yas>=60) {
                     double ind7 = b4 * 0.30 ;
-                    double b7 = b4-ind7;
+                    double b7 = (b4-ind7) * 2;
                     System.out.println(b7);
                 }else if (yas<0) {
                     System.out.println("Geçersiz bir değer girdiniz.");
 
                 }else {
-                    System.out.println(b4);
+                    double b8 = 2 * b4
+                    System.out.println(b8);
                 }
 
             }else if ((gidisD<1) || (gidisD>2)) {
